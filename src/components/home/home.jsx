@@ -1,21 +1,24 @@
 import './home.css'
+import { LuDownload } from "react-icons/lu"
+import { MdOutlinePeopleOutline } from "react-icons/md"
+import { IoBookOutline } from "react-icons/io5"
+import { FaArrowRightLong } from "react-icons/fa6"
+import { FaRegStar } from "react-icons/fa";
+
 import Navbar from "../navbar/navbar"
+import Hero from './hero/hero'
+import Feature from './feature/feature'
+import BrowseNotes from './browsenotes/browsenotes'
+import Creator from './creator/creator'
 
 function Home(){
     return(
         <>
          <Navbar/>
-        
-        <main className='h-[30rem] background bg-gray-900 '>
-                <div className='flex justify-evenly items-center'>
-                    <div className='h-[] max-w-[35%] bg-slate-600   '>
-                    <p className='text-indigo-500 text-[3em] text-center font-semibold'><span className='text-white'>Access Academic Notes </span>Anytime, Anywhere</p>
-
-                    <p className='text-white/90 text-[1.1em] text-center'>Join thousands of students who are already using NotesNeo to access high-quality academic notes. Study smarter, not harder.</p>
-                </div>
-                <div className='h-[20rem] w-[30rem] bg-slate-500 '></div>
-                </div>
-        </main>
+         <Hero/>
+         <Feature/>
+         <BrowseNotes/>
+         <Creator/>
          
         </>
     )
