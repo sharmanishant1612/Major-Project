@@ -10,6 +10,7 @@ import Hero from './hero/hero'
 import Feature from './feature/feature'
 import BrowseNotes from './browsenotes/browsenotes'
 import Creator from './creator/creator'
+import Faq from './FAQ/faq'
 
 function Home(){
     return(
@@ -19,6 +20,7 @@ function Home(){
          <Feature/>
          <BrowseNotes/>
          <Creator/>
+         <Faq/>
          
         </>
     )
