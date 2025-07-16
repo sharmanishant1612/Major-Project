@@ -116,12 +116,12 @@ function about() {
                     </div>
                     <p className='text-base text-gray-500 font-sans font-semibold tracking-wide text-center'>Full-stack developer with a passion for education technology</p>
                     <div className='flex flex-row gap-4'>
-                        <a href="https://github.com/sunnyV0207"><FiGithub className='text-xl text-gray-400 cursor-pointer' /></a>
-                        <a href="https://www.linkedin.com/in/sunny-verma-604519302"><LuLinkedin className='text-xl text-gray-400 cursor-pointer' /></a>
+                        <a href="https://github.com/sunnyV0207"><FiGithub className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
+                        <a href="https://www.linkedin.com/in/sunny-verma-604519302"><LuLinkedin className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                         <a href="https://wa.me/919027259417"
                             target="_blank"
                             rel="noopener noreferrer"
-                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer' /></a>
+                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                     </div>
                 </div>
                 <div className='px-8 md:px-0 md:w-[30%] flex flex-col items-center gap-6 bg-gray-800 rounded-md py-4'>
@@ -136,12 +136,12 @@ function about() {
                     </div>
                     <p className='text-base text-gray-500 font-sans font-semibold tracking-wide text-center'>Leads frontend design and supports backend development.</p>
                     <div className='flex flex-row gap-4'>
-                        <a href="https://github.com/sharmanishant1612"><FiGithub className='text-xl text-gray-400 cursor-pointer' /></a>
-                        <a href="http://www.linkedin.com/in/nishant-sharma-a2b15027b"><LuLinkedin className='text-xl text-gray-400 cursor-pointer' /></a>
+                        <a href="https://github.com/sharmanishant1612"><FiGithub className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
+                        <a href="http://www.linkedin.com/in/nishant-sharma-a2b15027b"><LuLinkedin className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                         <a href="https://wa.me/91986117104894"
                             target="_blank"
                             rel="noopener noreferrer"
-                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer' /></a>
+                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                     </div>
                 </div>
                 <div className='px-8 md:px-0 md:w-[30%] flex flex-col items-center gap-6 bg-gray-800 rounded-md py-4'>
@@ -156,12 +156,12 @@ function about() {
                     </div>
                     <p className='text-base text-gray-500 font-sans font-semibold tracking-wide text-center'>Organizes content, manages data, ensures structure and timely updates</p>
                     <div className='flex flex-row gap-4'>
-                        <a href="https://github.com/Gourav0404"><FiGithub className='text-xl text-gray-400 cursor-pointer' /></a>
-                        <a href="https://www.linkedin.com/in/gaurav-chauhan-9817b8371"><LuLinkedin className='text-xl text-gray-400 cursor-pointer' /></a>
+                        <a href="https://github.com/Gourav0404"><FiGithub className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
+                        <a href="https://www.linkedin.com/in/gaurav-chauhan-9817b8371"><LuLinkedin className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                         <a href="https://wa.me/919368963104"
                             target="_blank"
                             rel="noopener noreferrer"
-                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer' /></a>
+                        ><FaWhatsapp className='text-xl text-gray-400 cursor-pointer hover:text-indigo-500' /></a>
                     </div>
                 </div>
             </div>
