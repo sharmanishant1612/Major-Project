@@ -6,9 +6,9 @@ function Navbar(){
     let [darkmode,setdarkmode] = useState(true)
     return(
         <>
-            <header className="sticky top-0">
+            <header className="sticky top-0 z-50">
 
-                <nav className="h-[3.5rem] sm:h-[4.5rem] w-full bg-slate-800 flex justify-between items-center px-3   sm:px-10 lg:px-5">
+                <nav className="h-[3.5rem] sm:h-[4.5rem] w-full bg-slate-800 flex justify-between items-center px-3   sm:px-10 lg:px-5 ">
 
                     <div className="h-full   flex justify-center items-center">
                          {/* <img src="./public/NotesHub.png" alt="" className="h-[80%] w-full object-fit rounded-lg" /> */}
