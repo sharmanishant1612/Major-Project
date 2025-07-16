@@ -1,4 +1,5 @@
 import './home.css'
+import { BrowserRouter as Router, Routes, Route, Link,Outlet } from "react-router-dom"
 import { LuDownload } from "react-icons/lu"
 import { MdOutlinePeopleOutline } from "react-icons/md"
 import { IoBookOutline } from "react-icons/io5"
@@ -11,6 +12,8 @@ import Feature from './feature/feature'
 import BrowseNotes from './browsenotes/browsenotes'
 import Creator from './creator/creator'
 import Faq from './FAQ/faq'
+import Footer from '../footer/footer'
+import Students from './students/students'
 
 function Home(){
     return(
@@ -18,9 +21,12 @@ function Home(){
          <Navbar/>
          <Hero/>
          <Feature/>
-         <BrowseNotes/>
+         <BrowseNotes/> 
          <Creator/>
          <Faq/>
+          
+         <Footer/>
+         {/* <Students/> */}
          
         </>
     )
