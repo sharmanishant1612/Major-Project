@@ -13,9 +13,13 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.6.3",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
+=======
+    "react-router-dom": "^7.6.3"
+>>>>>>> fa4336dd85d1293441aa89f9bf969cb55619c7bf
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
