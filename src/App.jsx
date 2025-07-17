@@ -39,23 +39,13 @@ function App() {
                   <Route path='/resource' element={<Resource/>}/>
                   <Route path='/blog' element={<Blog/>}/>
                   <Route path='/contact' element={<Contact/>}/>
+                  {/* <Route path='resource' element={<Resource/>}/> */}
               </Route>
             </Routes>
           
      </BrowserRouter>
 
-     {/* <Router>
-      <Navbar/>
-      <Routes>
-        
-        <Route index element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path=''/>
-
-      </Routes>
-      <Footer/>
-     </Router> */}
-    
+  
       
 
     </>

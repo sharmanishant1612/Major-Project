@@ -45,7 +45,8 @@ function Navbar(){
                         <NavLink to="/" className={navLinkStyle}>Home</NavLink>
                         <NavLink to="/about" className={navLinkStyle}>About</NavLink>
                         <NavLink to="/notes" className={navLinkStyle}>Notes</NavLink>
-                        <NavLink to="/resource" className={navLinkStyle}>Blog</NavLink>
+                        <NavLink to="/blog" className={navLinkStyle}>Blog</NavLink>
+                        <NavLink to="/resource" className={navLinkStyle}>Resources</NavLink>
                         <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
                         <NavLink to="/favroites" className={navLinkStyle}><i className="fa-regular fa-heart px-2 text-[1.2em]"></i>Favorites</NavLink>
                         
