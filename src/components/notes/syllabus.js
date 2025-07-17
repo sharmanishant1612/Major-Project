@@ -182,7 +182,7 @@ export const syllabus = [
                         ]
                     },
                     {
-                        name:'Discrete Structure and Theory of LogicTheory of Automata and Formal Languages',
+                        name:'Theory of Automata and Formal Languages',
                         units:[
                             {
                                 number:1,
@@ -454,6 +454,161 @@ export const syllabus = [
                             {
                                 number:5,
                                 title:'Buisiness Organizations & E-Governance'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                semester:6,
+                subjects:[
+                    {
+                        name:'Software Engineering',
+                        units:[
+                            {
+                                number:1,
+                                title:'Software Process & SRS'
+                            },
+                            {
+                                number:2,
+                                title:'Design Methodologies'
+                            },
+                            {
+                                number:3,
+                                title:'Templementations and Coding Standards'
+                            },
+                            {
+                                number:4,
+                                title:'Testing Strategies & Quality Assurance'
+                            },
+                            {
+                                number:5,
+                                title:'Maintainance & Project Management'
+                            }
+                        ]
+                    },
+                    {
+                        name:'Compiler Design',
+                        units:[
+                            {
+                                number:1,
+                                title:'Lexical Analysis & Parsing'
+                            },
+                            {
+                                number:2,
+                                title:'Syntax-Directed Translation'
+                            },
+                            {
+                                number:3,
+                                title:'Semanic Analysis, Intermediate Code'
+                            },
+                            {
+                                number:4,
+                                title:'Code Optimization, Symbol Tables'
+                            },
+                            {
+                                number:5,
+                                title:'Code Generation Runtime Environment'
+                            }
+                        ]
+                    },
+                    {
+                        name:'Computer Networks',
+                        units:[
+                            {
+                                number:1,
+                                title:'Phyical & Data Link Layer'
+                            },
+                            {
+                                number:2,
+                                title:'Network Layer'
+                            },
+                            {
+                                number:3,
+                                title:'Data Link Layer & Switching'
+                            },
+                            {
+                                number:4,
+                                title:'Transport Layer'
+                            },
+                            {
+                                number:5,
+                                title:'Application Layer'
+                            }
+                        ]
+                    },
+                    {
+                        name:'Data Compression',
+                        units:[
+                            {
+                                number:1,
+                                title:'Foundation & Loseless Compression'
+                            },
+                            {
+                                number:2,
+                                title:'Arthimetic Coding & Dictionary Techniques'
+                            },
+                            {
+                                number:3,
+                                title:'Predictive Coding for Images'
+                            },
+                            {
+                                number:4,
+                                title:'Quantization Techniques'
+                            },
+                            {
+                                number:5,
+                                title:'Advanced Compression & Applications'
+                            }
+                        ]
+                    },
+                    {
+                        name:'Software Project Management',
+                        units:[
+                            {
+                                number:1,
+                                title:'Project Evaluation and planning'
+                            },
+                            {
+                                number:2,
+                                title:'Software Life Cycle and Effort Estimation'
+                            },
+                            {
+                                number:3,
+                                title:'Activity Planning and Risk Management'
+                            },
+                            {
+                                number:4,
+                                title:'Project Monitoring and Controlling'
+                            },
+                            {
+                                number:5,
+                                title:'Staffing, Leadership, & Communication'
+                            }
+                        ]
+                    },
+                    {
+                        name:'Essence of Indian Traditional Knowledge',
+                        units:[
+                            {
+                                number:1,
+                                title:'Society,State and Polity in Inida'
+                            },
+                            {
+                                number:2,
+                                title:'Indian Literature, Culture & Tradition'
+                            },
+                            {
+                                number:3,
+                                title:'Religion, Philosophy and Practices'
+                            },
+                            {
+                                number:4,
+                                title:'Science Management & Indian Knwoldge System'
+                            },
+                            {
+                                number:5,
+                                title:'Cultural Heritage & Performing Arts'
                             }
                         ]
                     }

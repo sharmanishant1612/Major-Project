@@ -5,7 +5,8 @@ import './App.css'
 // import About from './components/about/about.jsx'
 // import Blog from './components/blog/blog.jsx'
 // import Contact from './components/contact/contact.jsx'
-import Notes from './components/notes/notes.jsx'
+// import Notes from './components/notes/notes.jsx'
+import Resources from './components/resource/resource.jsx'
 
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
     <>
       {/* <Home/> */}
       {/* <About/> */}
-      <Notes />
+      {/* <Blog /> */}
+      {/* <Contact /> */}
+      {/* <Notes /> */}
+      <Resources />
     </>
   )
 }
