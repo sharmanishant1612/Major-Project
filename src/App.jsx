@@ -1,5 +1,16 @@
 import { useState } from 'react'
+// <<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route, Link,Outlet } from "react-router-dom"
+// =======
+import './App.css'
+// import Navbar from './components/navbar/navbar.jsx'
+// import Home from './components/home/home.jsx'
+// import About from './components/about/about.jsx'
+// import Blog from './components/blog/blog.jsx'
+// import Contact from './components/contact/contact.jsx'
+// import Notes from './components/notes/notes.jsx'
+import Resources from './components/resource/resource.jsx'
+// >>>>>>> 3d2577ceff921927524f20e2ed063f6da9df9af3
 
 import './App.css'
 import Navbar from './components/navbar/navbar.jsx'
@@ -16,6 +27,7 @@ function App() {
 
   return (
     <>
+{/* <<<<<<< HEAD */}
 
        
       {/* <Router>
@@ -41,6 +53,14 @@ function App() {
       </Routes>
     </Router>
      
+=======
+      {/* <Home/> */}
+      {/* <About/> */}
+      {/* <Blog /> */}
+      {/* <Contact /> */}
+      {/* <Notes /> */}
+      <Resources />
+{/* >>>>>>> 3d2577ceff921927524f20e2ed063f6da9df9af3 */}
     </>
   )
 }
