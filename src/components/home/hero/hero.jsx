@@ -4,6 +4,8 @@ import { MdOutlinePeopleOutline } from "react-icons/md"
 import { IoBookOutline } from "react-icons/io5"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { FaRegStar } from "react-icons/fa";
+import notes from '../../notes/notes'
+import { Link } from 'react-router-dom'
 
 
 function Hero(){
@@ -26,7 +28,7 @@ function Hero(){
                     </div>
                     
                     <div className='flex  justify-center  mt-5'>
-                        <a href="" className='bg-gradient-to-r from-indigo-700 to-violet-500 px-3 py-3 text-white font-semibold rounded-md flex items-center justify-center'> <span className='px-2'><IoBookOutline /></span>Search Notes Here <span  className='px-2'><FaArrowRightLong /></span></a>
+                        <Link to="/notes" className='bg-gradient-to-r from-indigo-700 to-violet-500 px-3 py-3 text-white font-semibold rounded-md flex items-center justify-center'> <span className='px-2'><IoBookOutline /></span>Search Notes Here <span  className='px-2'><FaArrowRightLong /></span></Link>
                     </div>
                 </div>
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link ,NavLink} from 'react-router-dom'
 
 function Navbar(){
 
@@ -7,6 +8,11 @@ function Navbar(){
     let [darkmode, setdarkmode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
     });
+
+     const navLinkStyle = ({ isActive }) =>
+      isActive
+      ? "text-indigo-500 border-b-2 border-indigo-500 px-3 py-2 font-semibold "
+      : "hover:text-indigo-500 dark:hover:text-white px-3 py-2";
 
    
 
@@ -34,21 +40,24 @@ function Navbar(){
                          {/* <img src="./public/NotesHub.png" alt="" className="h-[80%] w-full object-fit rounded-lg" /> */}
                          <p className="text-indigo-500 font-semibold text-[1.7em] sm:text-[2em] hover:text-indigo-700 duration-300">NotesHub</p>
                     </div>
+                    {/* hover:text-indigo-500 dark:hover:text-white" */}
 
                     <div className="h-full w-[%]  dark:text-white/85 lg:flex items-center lg:gap-12 px-5 font-semibold hidden ">
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">Home</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">About</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">Notes</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">Resources</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">Blog</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white">Contact</a>
-                        <a href="" className="hover:text-indigo-500 dark:hover:text-white"><i className="fa-regular fa-heart px-2 text-[1.2em]"></i>Favorites</a>
+                        <NavLink to="/" className={navLinkStyle} >Home</NavLink>
+
+                       
+                        <NavLink to="/about" className={navLinkStyle}>About</NavLink>
+                        <NavLink to="/notes" className={navLinkStyle}>Notes</NavLink>
+                        <NavLink to="/resourse" className={navLinkStyle}>Resources</NavLink>
+                        <NavLink to="/blog" className={navLinkStyle}>Blog</NavLink>
+                        <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
+                        <NavLink to="/favorites" className={navLinkStyle}><i className="fa-regular fa-heart px-2 text-[1.2em]"></i>Favorites</NavLink>
                         
                     </div>
 
                     <div className="h-full w-[%]  flex items-center gap-5 sm:gap-10 lg:gap-16 lg:px-3">
 
-                        <i className="fa-regular fa-heart px-2 text-[1.3em] sm:text-[1.5em] py-1 text-center rounded-md text-white lg:hidden "></i>
+                        <i className="fa-regular fa-heart px-2 text-[1.3em] sm:text-[1.5em] py-1 text-center rounded-md dark:text-white lg:hidden "></i>
 
                        <div>
                             {
@@ -71,13 +80,13 @@ function Navbar(){
             </nav>
                      {/* second div */}
                      <div className= {hamberger ? "hidden" : "h-[] w-full bg-slate-700 text-white font-semibold items-center flex flex-col py-2 fixed"}>
-                        <a href="" className="p-2">Home</a>
-                        <a href="" className="p-2">About</a>
-                        <a href="" className="p-2">Notes</a>
-                        <a href="" className="p-2">Resources</a>
-                        <a href="" className="p-2">Blog</a>
-                        <a href="" className="p-2">Contact</a>
-                        <a href="" className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block">Login</a>
+                        <Link to="/" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Home</Link>
+                        <Link to="/about" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>About</Link>
+                        <Link to="/notes" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Notes</Link>
+                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Resources</Link>
+                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Blog</Link>
+                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Contact</Link>
+                        <Link to="" className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block" onClick={()=>{sethamberger(!hamberger)}}>Login</Link>
                      </div>
             </header>
            

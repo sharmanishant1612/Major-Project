@@ -32,7 +32,7 @@ function notes() {
             : [];
 
   return (
-    <div className='max-h-screen w-screen py-12 px-6 flex flex-col items-center bg-slate-950 overflow-x-hidden overflow-y-auto'>
+    <div className=' py-12 px-6 flex flex-col items-center bg-slate-950 overflow-x-hidden overflow-y-auto'>
         <h1 className='text-4xl text-white font-bold block text-center'>Academic Notes</h1>
         <p className='text-gray-400 text-sm sm:text-lg font-semibold mt-3 text-center'>Browse Our Collection of High Quality Academic Notes</p>
         <div className='w-[90%] sm:w-[60%] md:w-[90%] py-4 rounded-lg border-[1px] border-gray-400 bg-gray-800 mt-12 flex flex-col gap-6 md:gap-0 md:flex-row items-center justify-evenly px-4 md:px-0'>

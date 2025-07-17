@@ -1,5 +1,5 @@
 import './home.css'
-// import { BrowserRouter as Router, Routes, Route, Link,Outlet } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link,Outlet } from "react-router-dom"
 import { LuDownload } from "react-icons/lu"
 import { MdOutlinePeopleOutline } from "react-icons/md"
 import { IoBookOutline } from "react-icons/io5"
@@ -18,14 +18,13 @@ import Students from './students/students'
 function Home(){
     return(
         <>
-         <Navbar/>
+         {/* <Navbar/> */}
          <Hero/>
          <Feature/>
          <BrowseNotes/> 
          <Creator/>
-         <Faq/>
-          
-         <Footer/>
+         <Faq/>  
+         {/* <Footer/> */}
          {/* <Students/> */}
          
         </>
