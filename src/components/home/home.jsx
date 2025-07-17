@@ -24,8 +24,8 @@ function Home(){
          <BrowseNotes/> 
          <Creator/>
          <Faq/>  
-         {/* <Footer/> */}
-         {/* <Students/> */}
+         
+        
          
         </>
     )

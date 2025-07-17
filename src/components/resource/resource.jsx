@@ -11,7 +11,7 @@ import { FaPenNib } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 
 
-function resource() {
+function Resource() {
 
     const [input,setInput] = useState('');
 
@@ -63,8 +63,10 @@ function resource() {
         }
     }
 
+    // px-6 py-8
+
   return (
-    <div className='max-h-screen w-screen overflow-x-hidden overflow-y-auto bg-slate-950 flex flex-col items-center px-6 py-8'>
+    <div className=' overflow-x-hidden overflow-y-auto bg-slate-950 flex flex-col items-center px-6 py-8 '>
       <h1 className='text-4xl text-white font-bold block text-center'>Resource Library</h1>
         <p className='text-gray-400 text-sm sm:text-lg font-semibold mt-3 text-center'>Access Study Material, Previous Papers and MOre</p>
         <div className='w-3/4 md:w-1/2 h-[3rem] rounded-lg bg-gray-800 border-[1px] border-gray-600 flex flex-row items-center px-4 mt-8 hover:border-2 hover:border-indigo-500'>
@@ -164,4 +166,4 @@ function resource() {
   )
 }
 
-export default resource
+export default Resource

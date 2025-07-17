@@ -11,10 +11,10 @@ import { Link } from 'react-router-dom'
 function Hero(){
     return(
         <>
-             <main className='  bg-black/10 dark:bg-gray-900 h-'>
+             <main className='bg-black/10 dark:bg-gray-900'>
                 <div className='flex lg:flex-row flex-col items-center justify-evenly  '>
 
-                    <div className='h-[]  w-[95%] sm:w-[80%] lg:w-[35%] py-6'>
+                    <div className='w-[95%] sm:w-[80%] lg:w-[40%] py-6'>
 
                     <p className='text-indigo-500 text-[2em] sm:text-[3em] text-center font-bold px-5 md:px-0'><span className='dark:text-white text-black'>Access Academic Notes </span>Anytime, Anywhere</p>
 
@@ -22,13 +22,13 @@ function Hero(){
 
                     <div className=' flex sm:flex-row flex-col  justify-center gap-4 mt-7'>
                         <a href="" className='bg-indigo-700 py-4 px-3 rounded-md font-semibold text-white flex items-center '> <span className='px-2'><MdOutlinePeopleOutline  /></span>
-                         Join WhatsApp Group</a>
+                         <span>Join WhatsApp Group</span></a>
                         <a href="" className='bg-white py-4 px-3 border border-indigo-500 rounded-md font-semibold text-indigo-700 flex items-center'> <span className='px-2'><LuDownload /></span>
                         Download Android App</a>
                     </div>
                     
                     <div className='flex  justify-center  mt-5'>
-                        <Link to="/notes" className='bg-gradient-to-r from-indigo-700 to-violet-500 px-3 py-3 text-white font-semibold rounded-md flex items-center justify-center'> <span className='px-2'><IoBookOutline /></span>Search Notes Here <span  className='px-2'><FaArrowRightLong /></span></Link>
+                        <a href="/notes" className='bg-gradient-to-r from-indigo-700 to-violet-500 px-3 py-3 text-white font-semibold rounded-md flex items-center justify-center'> <span className='px-2'><IoBookOutline /></span>Search Notes Here <span  className='px-2'><FaArrowRightLong /></span></a>
                     </div>
                 </div>
 

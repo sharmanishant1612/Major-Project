@@ -28,7 +28,7 @@ function blog() {
     .filter(blog => blog.title.toLowerCase().includes(input.toLowerCase()));
 
   return (
-    <div className='max-h-screen w-screen py-12 px-6 flex flex-col items-center bg-slate-950 overflow-x-hidden overflow-y-auto'>
+    <div className=' py-12 px-6 flex flex-col items-center bg-slate-950 overflow-x-hidden overflow-y-auto'>
         <h1 className='text-4xl text-white font-bold block text-center'>Blog & Articles</h1>
         <p className='text-gray-400 text-sm sm:text-lg font-semibold mt-3 text-center'>Explore articles, tutorials, and insights for your academic journey</p>
         <div className='w-3/4 md:w-1/2 h-[3rem] rounded-lg bg-gray-800 border-[1px] border-gray-600 flex flex-row items-center px-4 mt-12 hover:border-2 hover:border-indigo-500'>

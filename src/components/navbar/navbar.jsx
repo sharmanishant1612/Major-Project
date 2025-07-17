@@ -9,10 +9,11 @@ function Navbar(){
     return localStorage.getItem("theme") === "dark";
     });
 
-     const navLinkStyle = ({ isActive }) =>
-      isActive
-      ? "text-indigo-500 border-b-2 border-indigo-500 px-3 py-2 font-semibold "
-      : "hover:text-indigo-500 dark:hover:text-white px-3 py-2";
+
+    const navLinkStyle = ({ isActive }) =>
+    isActive
+      ? "text-indigo-500 border-b-2 border-indigo-500  font-semibold"
+      : "hover:text-indigo-500 dark:hover:text-white";
 
    
 
@@ -37,27 +38,22 @@ function Navbar(){
                 <nav className="h-[3.5rem] sm:h-[4.5rem] w-full bg-white dark:bg-slate-800 flex justify-between items-center px-3   sm:px-10 lg:px-5 ">
 
                     <div className="h-full   flex justify-center items-center">
-                         {/* <img src="./public/NotesHub.png" alt="" className="h-[80%] w-full object-fit rounded-lg" /> */}
                          <p className="text-indigo-500 font-semibold text-[1.7em] sm:text-[2em] hover:text-indigo-700 duration-300">NotesHub</p>
                     </div>
-                    {/* hover:text-indigo-500 dark:hover:text-white" */}
 
-                    <div className="h-full w-[%]  dark:text-white/85 lg:flex items-center lg:gap-12 px-5 font-semibold hidden ">
-                        <NavLink to="/" className={navLinkStyle} >Home</NavLink>
-
-                       
+                    <div className="h-full w-[%]  dark:text-white/85 lg:flex items-center lg:gap-12 px-5 font hidden ">
+                        <NavLink to="/" className={navLinkStyle}>Home</NavLink>
                         <NavLink to="/about" className={navLinkStyle}>About</NavLink>
                         <NavLink to="/notes" className={navLinkStyle}>Notes</NavLink>
-                        <NavLink to="/resourse" className={navLinkStyle}>Resources</NavLink>
-                        <NavLink to="/blog" className={navLinkStyle}>Blog</NavLink>
+                        <NavLink to="/resource" className={navLinkStyle}>Blog</NavLink>
                         <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
-                        <NavLink to="/favorites" className={navLinkStyle}><i className="fa-regular fa-heart px-2 text-[1.2em]"></i>Favorites</NavLink>
+                        <NavLink to="/favroites" className={navLinkStyle}><i className="fa-regular fa-heart px-2 text-[1.2em]"></i>Favorites</NavLink>
                         
                     </div>
 
                     <div className="h-full w-[%]  flex items-center gap-5 sm:gap-10 lg:gap-16 lg:px-3">
 
-                        <i className="fa-regular fa-heart px-2 text-[1.3em] sm:text-[1.5em] py-1 text-center rounded-md dark:text-white lg:hidden "></i>
+                        <i className="fa-regular fa-heart px-2 text-[1.3em] sm:text-[1.5em] py-1 text-center rounded-md text-white lg:hidden "></i>
 
                        <div>
                             {
@@ -66,7 +62,7 @@ function Navbar(){
                             }
                        </div>
 
-                         <a href="" className="bg-blue-500 hover:bg-blue-700 duration-300 text-white px-4  py-2 mr-3 rounded-md font-semibold hidden lg:block">Login</a>
+                         <button className="bg-blue-500 hover:bg-blue-700 duration-300 text-white px-4  py-2 mr-3 rounded-md font-semibold hidden lg:block">Login</button>
 
                          <div className="lg:hidden flex  mt-1">
                                 {
@@ -80,13 +76,13 @@ function Navbar(){
             </nav>
                      {/* second div */}
                      <div className= {hamberger ? "hidden" : "h-[] w-full bg-slate-700 text-white font-semibold items-center flex flex-col py-2 fixed"}>
-                        <Link to="/" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Home</Link>
-                        <Link to="/about" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>About</Link>
-                        <Link to="/notes" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Notes</Link>
-                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Resources</Link>
-                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Blog</Link>
-                        <Link to="" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Contact</Link>
-                        <Link to="" className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block" onClick={()=>{sethamberger(!hamberger)}}>Login</Link>
+                        <NavLink to="/" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Home</NavLink>
+                        <NavLink to="/about" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>About</NavLink>
+                        <NavLink to="/notes" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Notes</NavLink>
+                        <NavLink to="/resource" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Resources</NavLink>
+                        <NavLink to="/blog" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Blog</NavLink>
+                        <NavLink to="/contact" className="p-2" onClick={()=>{sethamberger(!hamberger)}}s>Contact</NavLink>
+                        <button className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block">Login</button>
                      </div>
             </header>
            
