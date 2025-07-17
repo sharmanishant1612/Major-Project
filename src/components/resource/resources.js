@@ -10,11 +10,31 @@ export const resources = [
                         contents:[
                             {
                                 img:'',
-                                resource_type:'Paper',
                                 title:'Mathematics End Terms Paper 2023',
                                 desc:'Previos Year Question Paper for Mathematics (2023)',
-                                subject:'Mthematics',
+                                subject:'Mathematics',
                                 year:'2023'
+                            },
+                            {
+                                img:'',
+                                title:'Physics End Terms Paper 2024',
+                                desc:'Previos Year Question Paper for Physics (2024)',
+                                subject:'Physics',
+                                year:'2024'
+                            },
+                            {
+                                img:'',
+                                title:'Physics End Terms Paper 2024',
+                                desc:'Previos Year Question Paper for Physics (2024)',
+                                subject:'Physics',
+                                year:'2024'
+                            },
+                            {
+                                img:'',
+                                title:'Physics End Terms Paper 2024',
+                                desc:'Previos Year Question Paper for Physics (2024)',
+                                subject:'Physics',
+                                year:'2024'
                             }
                         ]
                     },
@@ -22,8 +42,7 @@ export const resources = [
                         type:'Video Lectures',
                         contents:[
                             {
-                                vid:'',
-                                resource_type:'Video',
+                                vid:'https://www.youtube.com/watch?v=vLqTf2b6GZw',
                                 title:'Python Programming Basics',
                                 desc:'Introduction to Python Programming Fundamentals',
                                 subject:'Python'
@@ -35,7 +54,6 @@ export const resources = [
                         contents:[
                             {
                                 img:'',
-                                resource_type:'Practice',
                                 title:'DSA Practice Problem Set',
                                 desc:'Collection of Practice Problems for Data Structures',
                                 subject:'DSA'
@@ -47,7 +65,6 @@ export const resources = [
                         contents:[
                             {
                                 img:'',
-                                resource_type:'Book',
                                 title:'Introduction to Algorithims',
                                 desc:'Comprehensive guide to algorithms and their implementation',
                                 subject:'DSA'
