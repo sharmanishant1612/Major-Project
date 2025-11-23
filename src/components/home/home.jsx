@@ -23,6 +23,7 @@ function Home(){
          <Feature/>
          <BrowseNotes/> 
          <Creator/>
+         <Students/>
          <Faq/>  
          
         
