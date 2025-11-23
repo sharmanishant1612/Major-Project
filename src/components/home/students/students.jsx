@@ -191,7 +191,7 @@ function Students() {
     {
       name: "Nishant Sharma",
       role: "B.Tech Student",
-      image: "/public/nishant.png",
+      image: "/nishant.png",
       review:
         "NotesNeo has been a game-changer for my studies. The notes are well-organized and easy to understand.",
       rating: 4,
@@ -199,21 +199,21 @@ function Students() {
     {
       name: "Aman Kumar",
       role: "Engineering Student",
-      image: "/public/nishant.png",
+      image: "/nishant.png",
       review: "Very detailed and easy notes. Highly recommended!",
       rating: 5,
     },
     {
       name: "Rohit Singh",
       role: "IT Student",
-      image: "/public/nishant.png",
+      image: "/nishant.png",
       review: "Helped me a lot during exams.",
       rating: 4,
     },
     {
       name: "Vikas Sharma",
       role: "CS Student",
-      image: "/public/nishant.png",
+      image: "/nishant.png",
       review: "Amazing platform with quality notes!",
       rating: 5,
     },
