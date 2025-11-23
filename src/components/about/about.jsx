@@ -17,7 +17,7 @@ function about() {
                     <p className='text-lg text-black/80 dark:text-gray-400 font-semibold'>We continuously enhance our resources to support students' academic and personal success.</p>
                 </div>
                 <div className='max-w-[90%] sm:max-w-[60%] rounded-xl self-center mt-12 md:mt-0'>
-                    <img src="/public/about.jpeg" alt="" className='h-[30rem] max-w-full object-cover rounded-xl'/>
+                    <img src="/about.jpeg" alt="" className='h-[30rem] max-w-full object-cover rounded-xl'/>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ function about() {
             <div className='md:grid md:grid-cols-3 md:gap-x-6 md:gap-y-12 space-y-12 md:space-y-0 mt-12'>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/brain.png" alt="" className='object-cover'/>
+                        <img src="/brain.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Knowledge Accessibility</h3>
@@ -36,7 +36,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/folder.png" alt="" className='object-cover'/>
+                        <img src="/folder.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Organized Resources</h3>
@@ -45,7 +45,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/puzzle.png" alt="" className='object-cover'/>
+                        <img src="/puzzle.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Practical Learning</h3>
@@ -54,7 +54,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/student.png" alt="" className='object-cover'/>
+                        <img src="/student.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Student-First Approach</h3>
@@ -63,7 +63,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/handshake.png" alt="" className='object-cover'/>
+                        <img src="/handshake.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Peer Support</h3>
@@ -72,7 +72,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/cogwheel.png" alt="" className='object-cover'/>
+                        <img src="/cogwheel.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Continuous Updates</h3>
@@ -81,7 +81,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/search.png" alt="" className='object-cover'/>
+                        <img src="/search.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Verified Content</h3>
@@ -90,7 +90,7 @@ function about() {
                 </div>
                 <div className='flex flex-row items-start gap-6'>
                     <div className='h-[4rem] w-[4.5rem] flex flex-row justify-center items-start'>
-                        <img src="/public/deadline.png" alt="" className='object-cover'/>
+                        <img src="/deadline.png" alt="" className='object-cover'/>
                     </div>
                     <div className='flex flex-col'>
                         <h3 className='text-xl text-black/90 dark:text-white font-semibold'>Save Time, Score Better</h3>
@@ -107,7 +107,7 @@ function about() {
                 <div className='px-8 md:px-0 md:w-[30%] flex flex-col items-center gap-6 bg-white dark:bg-gray-800 rounded-md py-4'>
                     <div className='w-[10rem] h-[10rem] rounded-full p-1 bg-indigo-600'>
                         <div className='h-full w-full bg-white rounded-full p-1'>
-                            <img src="/public/sunny.png" alt="" className='object-cover'/>
+                            <img src="/sunny.png" alt="" className='object-cover'/>
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-1'>
@@ -127,7 +127,7 @@ function about() {
                 <div className='px-8 md:px-0 md:w-[30%] flex flex-col items-center gap-6 bg-white dark:bg-gray-800 rounded-md py-4'>
                     <div className='w-[10rem] h-[10rem] rounded-full p-1 bg-indigo-600'>
                         <div className='h-full w-full bg-white rounded-full p-1'>
-                            <img src="/public/nishant.png" alt="" className='object-cover'/>
+                            <img src="/nishant.png" alt="" className='object-cover'/>
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-1'>
@@ -147,7 +147,7 @@ function about() {
                 <div className='px-8 md:px-0 md:w-[30%] flex flex-col items-center gap-6 bg-white dark:bg-gray-800 rounded-md py-4'>
                     <div className='w-[10rem] h-[10rem] rounded-full p-1 bg-indigo-600'>
                         <div className='h-full w-full bg-white rounded-full p-1'>
-                            <img src="/public/sunny.png" alt="" className='object-cover'/>
+                            <img src="/sunny.png" alt="" className='object-cover'/>
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-1'>

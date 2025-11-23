@@ -37,12 +37,12 @@ function blog() {
         </div>
         <div className='w-full flex flex-col sm:flex-row items-center justify-center gap-12 mt-12'>
             <div id='B.Tech' className={`w-full sm:w-[40%] flex flex-col items-center gap-4 py-6 px-4 bg-gray-800 rounded-xl hover:bg-white/20 ${coloredCourse === 'B.Tech' && 'bg-indigo-600 hover:bg-indigo-600 transition-all transform scale-105'}`} onClick={handleCourseClick}>
-                <img src="/public/btech.png" alt="" className='h-[4rem] w-[4rem]'/>
+                <img src="/btech.png" alt="" className='h-[4rem] w-[4rem]'/>
                 <h3 className='text-2xl text-white font-bold'>B.Tech</h3>
                 <p className='text-gray-400 text-lg font-semibold text-center'>Technical Articles and Guides for Engineering Students</p>
             </div>
             <div id='BCA' className={`w-full sm:w-[40%] flex flex-col items-center gap-4 py-6 px-4 bg-gray-800 rounded-xl hover:bg-white/20 ${coloredCourse === 'BCA' && 'bg-indigo-600 hover:bg-indigo-600 transition-all transform scale-105'}`} onClick={handleCourseClick}>
-                <img src="/public/bca.png" alt="" className='h-[4rem] w-[4rem]'/>
+                <img src="/bca.png" alt="" className='h-[4rem] w-[4rem]'/>
                 <h3 className='text-2xl text-white font-bold'>BCA</h3>
                 <p className='text-gray-400 text-lg font-semibold text-center'>Computer Application and Computer Insights</p>
             </div>
