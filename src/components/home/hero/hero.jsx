@@ -33,7 +33,7 @@ function Hero(){
                 </div>
 
                 <div className='h-[] w-[90%] sm:w-[60%] md:w-[50%] lg:w-[35%] mt-5 sm:mt-0 py-2 '>
-                    <img src="./public/noteshub.svg" alt=""  className='h-full w-full object-fill hover:scale-105 duration-300'/>
+                    <img src="/public/noteshub.svg" alt=""  className='h-full w-full object-fill hover:scale-105 duration-300'/>
                 </div>
 
             </div>

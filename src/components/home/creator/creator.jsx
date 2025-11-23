@@ -16,7 +16,7 @@ function Creator(){
                     <div className='h-[] w-[] px-20 bg-slate-300 dark:bg-indigo-950 flex flex-col  items-center py-5 rounded-lg'>
                         <div className='h-[12rem] w-[12rem] rounded-full bg-indigo-700 p-2'>
                             <div className='h-full w-full bg-white rounded-full'>
-                                <img src="./public/nishant.png" alt="" className='p-1'/>
+                                <img src="/public/nishant.png" alt="" className='p-1'/>
                             </div>
                         </div>
                         <p className='py-2  pt-3 text-[1.3em] dark:text-white text-center font-semibold'>Nishant Sharma</p>
