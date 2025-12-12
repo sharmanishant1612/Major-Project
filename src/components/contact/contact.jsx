@@ -3,9 +3,14 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsSend } from "react-icons/bs";
+import Navbar from '../navbar/navbar';
+import Footer from '../footer/footer';
 
 function contact() {
   return (
+    <>
+    <Navbar/>
+    
     <div className='bg-black/5 dark:bg-slate-950 py-8 px-6 flex flex-col items-center overflow-y-auto overflow-x-hidden'>
         <h1 className='text-4xl dark:text-white font-bold block'>Contact Us</h1>
         <p className='text-gray-500 text-base font-semibold mt-3'>Have doubts? We'hd love to hear from you.</p>
@@ -63,6 +68,8 @@ function contact() {
             </form>
         </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

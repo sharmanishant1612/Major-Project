@@ -2,9 +2,13 @@ import React from 'react'
 import { FiGithub } from "react-icons/fi";
 import { LuLinkedin } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
+import Footer from '../footer/footer';
+import Navbar from '../navbar/navbar';
 
 function about() {
   return (
+    <>
+    <Navbar/>
     <div className='  overflow-x-hidden overflow-y-auto'>
         <div className='w-screen bg-black/5 dark:bg-slate-950 py-8 px-6 flex flex-col items-center'>
             <h1 className='text-4xl dark:text-white font-bold block text-center'>About NotesHub</h1>
@@ -167,6 +171,8 @@ function about() {
             </div>
         </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

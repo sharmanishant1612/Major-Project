@@ -5,6 +5,8 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 import { CiCalendar } from "react-icons/ci";
 import { FaRegClock } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Footer from '../footer/footer.jsx';
+import Navbar from '../navbar/navbar.jsx';
 
 function blog() {
 
@@ -28,6 +30,8 @@ function blog() {
     .filter(blog => blog.title.toLowerCase().includes(input.toLowerCase()));
 
   return (
+    <>
+    <Navbar/>
     <div className=' py-12 px-6 flex flex-col items-center bg-slate-950 overflow-x-hidden overflow-y-auto'>
         <h1 className='text-4xl text-white font-bold block text-center'>Blog & Articles</h1>
         <p className='text-gray-400 text-sm sm:text-lg font-semibold mt-3 text-center'>Explore articles, tutorials, and insights for your academic journey</p>
@@ -91,6 +95,8 @@ function blog() {
         </div>
 
     </div>
+        <Footer/>
+    </>
   )
 }
 

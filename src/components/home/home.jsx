@@ -18,14 +18,14 @@ import Students from './students/students'
 function Home(){
     return(
         <>
-         {/* <Navbar/> */}
+         <Navbar/>
          <Hero/>
          <Feature/>
          <BrowseNotes/> 
          <Creator/>
          <Students/>
          <Faq/>  
-         
+         <Footer/>
         
          
         </>

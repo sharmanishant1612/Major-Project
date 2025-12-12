@@ -25,31 +25,30 @@ function App() {
 
   return (
     <>
-
-       
-   
-     <BrowserRouter>
-     
-          
-            <Routes>
-              <Route path='/' element={<Layout/>}>
-                  <Route index element ={<Home/>}/>
-                  <Route path='/about' element={<About/>}/>
-                  <Route path='/notes' element={<Notes/>}/>
-                  <Route path='/resource' element={<Resource/>}/>
-                  <Route path='/blog' element={<Blog/>}/>
-                  <Route path='/contact' element={<Contact/>}/>
-                  {/* <Route path='resource' element={<Resource/>}/> */}
-              </Route>
-            </Routes>
-          
-     </BrowserRouter>
-
-  
-      
-
+      {/* <Navbar/> */}
+      <Outlet/>
+      {/* <Footer/> */}
     </>
   )
 }
 
 export default App
+
+
+
+//  <BrowserRouter>
+     
+          
+//             <Routes>
+//               <Route path='/' element={<Layout/>}>
+//                   <Route index element ={<Home/>}/>
+//                   <Route path='/about' element={<About/>}/>
+//                   <Route path='/notes' element={<Notes/>}/>
+//                   <Route path='/resource' element={<Resource/>}/>
+//                   <Route path='/blog' element={<Blog/>}/>
+//                   <Route path='/contact' element={<Contact/>}/>
+//                   {/* <Route path='resource' element={<Resource/>}/> */}
+//               </Route>
+//             </Routes>
+          
+//      </BrowserRouter>

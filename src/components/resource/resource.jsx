@@ -10,10 +10,14 @@ import { IoPlayOutline } from "react-icons/io5";
 import { FaPenNib } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
+import Footer from '../footer/footer.jsx';
+import Navbar from '../navbar/navbar.jsx';
 
 
 
 function Resource() {
+
+    
 
     const [selectedCourse,setSelectedCourse] = useState("");
     const [selectedSemester,setSelectedSemester] = useState("");
@@ -42,6 +46,7 @@ function Resource() {
 
     
     const PreviousPapers = ({item}) => (
+        
         <div className='flex flex-col rounded-lg bg-gray-800'>
             <div className='w-full h-[12rem] rounded-t-lg'>
                 <img src={item.img} alt="" className='h-full w-full object-cover rounded-t-lg'/>
@@ -208,6 +213,8 @@ function Resource() {
     // px-6 py-8
 
   return (
+    <>
+    <Navbar/>
     <div className=' overflow-x-hidden overflow-y-auto bg-slate-950 flex flex-col items-center px-6 py-8 '>
       <h1 className='text-4xl text-white font-bold block text-center'>Resource Library</h1>
         <p className='text-gray-400 text-sm sm:text-lg font-semibold mt-3 text-center'>Access Study Material, Previous Papers and MOre</p>
@@ -301,7 +308,9 @@ function Resource() {
             </div>
         }
     </div>
+    <Footer/>
+    </>
   )
 }
 
-export default Resource
+export default Resource;

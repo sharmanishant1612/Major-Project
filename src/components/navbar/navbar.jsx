@@ -1,7 +1,18 @@
-import { useEffect, useState } from "react"
+import { use, useEffect, useState } from "react"
 import { Link ,NavLink} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../authProvider/AuthProvider";
+import { useContext } from "react";
+
 
 function Navbar(){
+
+    const navigate = useNavigate();
+
+    const {user,setuser} = useContext(AuthContext);
+    // let [user,setuser] = useState(null);
+
+    let [showDiv,setshowDiv] = useState(false);
 
     let [hamberger,sethamberger] = useState(true)
     // let [darkmode,setdarkmode] = useState(true)
@@ -15,9 +26,21 @@ function Navbar(){
       ? "text-indigo-500 border-b-2 border-indigo-500  font-semibold"
       : "hover:text-indigo-500 dark:hover:text-white";
 
+
+    const handleLogout = async ()=>{
+        await localStorage.removeItem("user");
+        setuser(null);
+        setshowDiv(!showDiv);
+    }
    
 
+    // useEffect(()=>{
+    //     const user = localStorage.getItem("user");
+    //     if(user){
+    //         setuser(JSON.parse(user));
+    //     }
 
+    // },[])
     
 
     useEffect(()=>{
@@ -30,6 +53,8 @@ function Navbar(){
              localStorage.setItem("theme", "light");
         }
     },[darkmode]);
+
+  
 
     return(
         <>
@@ -63,7 +88,17 @@ function Navbar(){
                             }
                        </div>
 
-                         <button className="bg-blue-500 hover:bg-blue-700 duration-300 text-white px-4  py-2 mr-3 rounded-md font-semibold hidden lg:block">Login</button>
+                        {
+                            user ?
+                            //  <button onClick={handleLogout} className="bg-red-500 hover:bg-red-700 duration-300 text-white px-4  py-2 mr-3 rounded-md font-semibold hidden lg:block">Logout</button>
+                            // 
+                            <div onClick={()=>setshowDiv(!showDiv)} className="bg-white rounded-full h-[2.2rem] w-[2.2rem] lg:flex justify-center items-center hidden ">
+                                    {/* <i className="fa-regular fa-user text-[1.5em] text-slate-500"></i> */}
+                                    <img src="nishant.png" alt="" className="h-full w-full rounded-full" />
+                            </div>:
+                              <button onClick={()=>{navigate("/login")}} className="bg-blue-500 hover:bg-blue-700 duration-300 text-white px-4  py-2 mr-3 rounded-md font-semibold hidden lg:block">Login</button>
+                        }
+                        
 
                          <div className="lg:hidden flex  mt-1">
                                 {
@@ -83,9 +118,32 @@ function Navbar(){
                         <NavLink to="/resource" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Resources</NavLink>
                         <NavLink to="/blog" className="p-2" onClick={()=>{sethamberger(!hamberger)}}>Blog</NavLink>
                         <NavLink to="/contact" className="p-2" onClick={()=>{sethamberger(!hamberger)}}s>Contact</NavLink>
-                        <button className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block">Login</button>
+                        {
+                            user ?
+                            <button onClick={handleLogout} className="bg-red-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block">Logout</button>:
+                            <button onClick={()=>{navigate("/login")}} className="bg-blue-500 text-white px-4  py-2 my-2 rounded-md font-semibold  lg:block">Login</button>
+                        }
                      </div>
             </header>
+
+            <div className={showDiv?"h-[] w-[]   bg-slate-500 fixed top-15 right-10  ":"hidden"}>
+                    <div className="flex justify-end">
+                        <i onClick={()=>{setshowDiv(!showDiv)}} className="fa-solid fa-xmark text-[1.3em] pr-2 pt-1"></i>
+                    </div>
+
+                    <div className="flex flex-col items-center px-5">
+                        <div className="h-[4rem] w-[4rem] rounded-full bg-white">
+                            <img src="nishant.png" alt="" className="h-full w-full rounded-full" />
+                        </div>
+                        <p className="py-2">Hi,{user && user.name}</p>
+                    </div>
+
+                    <div className="mt-5 pl-5 py-3">
+                        <p className="p-1">Profile</p>
+                        <p onClick={handleLogout} className="p-1">Signout</p>
+                    </div>
+                    
+            </div>
            
         </>
     )
